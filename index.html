@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Meteo | Arkage </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Flickity-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="content clearfix">
+            <div>
+                <a href="#" title="Smartphone" class="logo">VIRGIN <i class="fa-solid fa-wifi"></i></a>
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <ul class="current-menu-item">
+                        <li><a href="#"><i class="fa-brands fa-bluetooth-b"></i></a></li>
+                        <li><a href="#">82% <i class="fa-solid fa-battery-three-quarters"></i></a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Carousel -->
+    <div class="hero-slider" data-carousel>
+
+        <!-- Londra -->
+        <div class="carousel-cell" style="background-image: url(img/london.jpg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <a class="weatherwidget-io" href="https://forecast7.com/it/51d51n0d13/london/" data-label_1="Londra"
+                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
+                    data-basecolor="rgba(31, 86, 124, 0)">Londra</a></div>
+        </div>
+
+
+        <!-- Milano -->
+        <div class="carousel-cell" style="background-image: url(img/milan.jpg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <a class="weatherwidget-io" href="https://forecast7.com/it/45d469d19/milan/" data-label_1="Milano"
+                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
+                    data-basecolor="rgba(31, 86, 124, 0)">Milano</a>
+            </div>
+        </div>
+
+
+        <!-- BANGKOK -->
+        <div class="carousel-cell" style="background-image: url(img/bangkok.jpg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <a class="weatherwidget-io" href="https://forecast7.com/it/13d76100d50/bangkok/" data-label_1="Bangkok"
+                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
+                    data-basecolor="rgba(31, 86, 124, 0)">Bangkok</a>
+            </div>
+        </div>
+
+
+        <!-- Los Angeles -->
+        <div class="carousel-cell" style="background-image: url(img/los-angeles.jpg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <a class="weatherwidget-io" href="https://forecast7.com/it/34d05n118d24/los-angeles/"
+                    data-label_1="Los Angeles" data-font="Open Sans Condensed" data-icons="Climacons Animated"
+                    data-theme="original" data-basecolor="rgba(31, 86, 124, 0)">Los Angeles</a>
+            </div>
+        </div>
+
+
+        <!-- Nairobi -->
+        <div class="carousel-cell" style="background-image: url(img/nairobi.jpg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <a class="weatherwidget-io" href="https://forecast7.com/it/n1d2936d82/nairobi/" data-label_1="Nairobi"
+                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
+                    data-basecolor="rgba(31, 86, 124, 0)">Nairobi</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="credits">
+            <p>&copy; 2022 Arkage</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Script JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
+        
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    
+    <script>
+        !function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'weatherwidget-io-js');
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
