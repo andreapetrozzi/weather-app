@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Meteo | Arkage </title>
+    <title>App Meteo</title>
 
-    <!-- CSS -->
+    <!-- CSS ctrl+F -->
     <link rel="stylesheet" href="scss/style.css">
 
     <!-- Font Awesome -->
@@ -23,113 +23,145 @@
     <!-- HEADER -->
     <header id="header">
         <div class="content clearfix">
-            <div>
-                <a href="#" title="Smartphone" class="logo">VIRGIN <i class="fa-solid fa-wifi"></i></a>
-            </div>
-
-            <nav>
-                <ul class="nav">
-                    <ul class="current-menu-item">
+            <div class="date-container">
+                <div class="time" id="time">00:00 <span id="am-pm">PM</span></div>
+                <div class="date" id="date">Lunedì, 01 Gen</div>
+                <nav>
+                    <ul class="nav">
                         <li><a href="#"><i class="fa-brands fa-bluetooth-b"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-wifi"></i></a></li>
                         <li><a href="#">82% <i class="fa-solid fa-battery-three-quarters"></i></a></li>
                     </ul>
-                </ul>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
 
 
+
     <!-- Carousel -->
     <div class="hero-slider" data-carousel>
-
-        <!-- Londra -->
         <div class="carousel-cell" style="background-image: url(img/london.jpg)">
             <div class="overlay"></div>
             <div class="inner">
-                <a class="weatherwidget-io" href="https://forecast7.com/it/51d51n0d13/london/" data-label_1="Londra"
-                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
-                    data-basecolor="rgba(31, 86, 124, 0)">Londra</a></div>
-        </div>
-
-
-        <!-- Milano -->
-        <div class="carousel-cell" style="background-image: url(img/milan.jpg)">
-            <div class="overlay"></div>
-            <div class="inner">
-                <a class="weatherwidget-io" href="https://forecast7.com/it/45d469d19/milan/" data-label_1="Milano"
-                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
-                    data-basecolor="rgba(31, 86, 124, 0)">Milano</a>
+                <div class="container">
+                    <div class="current-info">
+                        <div class="date-container">
+                            <div class="time-zone" id="time-zone-londra">Londra/Kolkata</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="today" id="current-temp-londra">
+                        <div class="other"></div>
+                    </div>
+                    <div class="weather-forecast" id="weather-forecast-londra"></div>
+                </div>
             </div>
         </div>
 
+        <div class="carousel-cell" style="background-image: url(img/milan.jpeg)">
+            <div class="overlay"></div>
+            <div class="inner">
+                <div class="container">
+                    <div class="current-info">
+                        <div class="date-container">
+                            <div class="time-zone" id="time-zone-milano">Milano/Kolkata</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="today" id="current-temp-milano">
+                        <div class="other"></div>
+                    </div>
+                    <div class="weather-forecast" id="weather-forecast-milano"></div>
+                </div>
+            </div>
+        </div>
 
-        <!-- BANGKOK -->
         <div class="carousel-cell" style="background-image: url(img/bangkok.jpg)">
             <div class="overlay"></div>
             <div class="inner">
-                <a class="weatherwidget-io" href="https://forecast7.com/it/13d76100d50/bangkok/" data-label_1="Bangkok"
-                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
-                    data-basecolor="rgba(31, 86, 124, 0)">Bangkok</a>
+                <div class="container">
+                    <div class="current-info">
+                        <div class="date-container">
+                            <div class="time-zone" id="time-zone-bangkok">Bangkok/Kolkata</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="today" id="current-temp-bangkok">
+                        <div class="other"></div>
+                    </div>
+                    <div class="weather-forecast" id="weather-forecast-bangkok"></div>
+                </div>
             </div>
         </div>
 
-
-        <!-- Los Angeles -->
         <div class="carousel-cell" style="background-image: url(img/los-angeles.jpg)">
             <div class="overlay"></div>
             <div class="inner">
-                <a class="weatherwidget-io" href="https://forecast7.com/it/34d05n118d24/los-angeles/"
-                    data-label_1="Los Angeles" data-font="Open Sans Condensed" data-icons="Climacons Animated"
-                    data-theme="original" data-basecolor="rgba(31, 86, 124, 0)">Los Angeles</a>
+                <div class="container">
+                    <div class="current-info">
+                        <div class="date-container">
+                            <div class="time-zone" id="time-zone-los-angeles">Asia/Kolkata</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="today" id="current-temp-losAngeles">
+                        <div class="other"></div>
+                    </div>
+                    <div class="weather-forecast" id="weather-forecast-losAngeles"></div>
+                </div>
             </div>
         </div>
 
-
-        <!-- Nairobi -->
         <div class="carousel-cell" style="background-image: url(img/nairobi.jpg)">
             <div class="overlay"></div>
             <div class="inner">
-                <a class="weatherwidget-io" href="https://forecast7.com/it/n1d2936d82/nairobi/" data-label_1="Nairobi"
-                    data-font="Open Sans Condensed" data-icons="Climacons Animated" data-theme="original"
-                    data-basecolor="rgba(31, 86, 124, 0)">Nairobi</a>
+                <div class="container">
+                    <div class="current-info">
+                        <div class="date-container">
+                            <div class="time-zone" id="time-zone-nairobi">Asia/Kolkata</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-forecast">
+                    <div class="today" id="current-temp-nairobi">
+                        <div class="other"></div>
+                    </div>
+                    <div class="weather-forecast" id="weather-forecast-nairobi"></div>
+                </div>
             </div>
         </div>
 
-    </div>
+    </div> <!-- Carousel-->
 
     <!-- FOOTER -->
     <footer>
         <div class="credits">
-            <p>&copy; 2022 Arkage</p>
+            <p>&copy; 2022 Andrea Petrozzi</p>
         </div>
     </footer>
 
 
 
+    
+
+
     <!-- Script JS -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
-        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript" src="./js/script.js"></script>
-
-    
-    <script>
-        !function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://weatherwidget.io/js/widget.min.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, 'script', 'weatherwidget-io-js');
-    </script>
 
 
 </body>
 </html>
-
-
 
 
 
