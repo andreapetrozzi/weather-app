@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -19,11 +21,12 @@ header {
     z-index: 99999;
 }
 
-.logo {
-    font-size: 20px;
+.time,
+.date {
+    font-size: 15px;
     font-weight: 300;
     color: #fff;
-    margin-left: 35px;
+    margin-left: 20px;
     text-decoration: none;
     line-height: 100px;
     float: left;
@@ -33,15 +36,16 @@ header {
     float: right;
     list-style: none;
     margin-top: 0px;
-    margin-right: 35px;
+    margin-right: 15px;
+    padding-left: 0px;
 }
 
 .nav li {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 100px;
-    margin-left: 40px;
+    margin-left: 10px;
     display: inline;
 }
 
@@ -52,7 +56,6 @@ header {
 
 }
 
-
 /* Carousel */
 .overlay {
     position: absolute;
@@ -62,6 +65,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 29, 51, 0.8)), to(rgba(14, 29, 51, 0.2)));
     background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
 }
 
@@ -83,6 +87,7 @@ header {
     position: relative;
     top: 50%;
     margin: 0 75px;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     color: white;
     text-align: center;
@@ -108,12 +113,13 @@ header {
 
 .hero-slider .carousel-cell .inner .btn {
     border: 1px solid #fff;
-    padding: 14px 18px;
+    padding: 5px 10px;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 3px;
     color: #fff;
     text-decoration: none;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -123,8 +129,8 @@ header {
 }
 
 .hero-slider .flickity-prev-next-button {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background: transparent;
 }
 
@@ -155,15 +161,120 @@ header {
 }
 
 
-.credits {
-    color: #fff;
-    text-align: center;
-
-}
-
 .weatherwidget-io {
     margin: 0 50px;
 }
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    /* border-radius: 10px; */
+
+}
+
+.future-forecast .today .day {
+    padding: 5px 10px;
+    background: #000;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.future-forecast .today .temp {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.future-forecast {
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin-top: -35px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.future-forecast .weather-forecast {
+    justify-content: center;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    margin: -30px;
+}
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+
+@media only screen and (max-width:730px) {
+
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .future-forecast .today .temp {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+
+    .date-container .time {
+        font-size: 12px;
+    }
+
+    .date-container #am-pm {
+        font-size: 15px;
+    }
+
+    .date-container .date {
+        font-size: 15px;
+    }
+
+    .place-container {
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .place-container .time-zone-londra {
+        font-size: 20px;
+    }
+
+    .current-info .others {
+        padding: 12px;
+    }
+
+    .current-info .others .wather-item {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+
+}
+
 
 .credits {
     font-size: 12px;
