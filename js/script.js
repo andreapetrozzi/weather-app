@@ -122,7 +122,7 @@ function showWeatherLondonData(data) {
 
 getMilanoData()
 function getMilanoData() {
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=45.5&lon=9.5&exclude=hourly,minutely&units=metric&appid=${API_KEY}`).then(res => res.json()).then(data => {
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=45.464161&lon=9.19199&exclude=hourly,minutely&units=metric&appid=${API_KEY}`).then(res => res.json()).then(data => {
         // console.log(data)
         showWeatherMilanData(data);
     });
